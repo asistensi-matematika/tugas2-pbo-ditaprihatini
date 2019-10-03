@@ -49,11 +49,12 @@ output: -27i3
 
 ## screenshot hasil
 Tampilan untuk soal no 1
-![soal1](https://user-images.githubusercontent.com/49512967/66121551-ae016f80-e607-11e9-85bc-34ef6c100b15.jpg)
+![soal1fix](https://user-images.githubusercontent.com/49512967/66143405-537d0900-e631-11e9-8dc7-06d7030dcada.jpg)
+
 
 Tampilan untuk soal no 2
-![soal2](https://user-images.githubusercontent.com/49512967/66121554-ae9a0600-e607-11e9-9c54-30924e6d3e5e.jpg)
-`
+![soal2fix](https://user-images.githubusercontent.com/49512967/66143407-537d0900-e631-11e9-8f61-9d8e4918a923.jpg)
+
 
 ## UPLOAD
 upload seluruh folder project java-nya ke repository ini.
