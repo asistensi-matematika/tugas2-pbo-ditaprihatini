@@ -2,7 +2,6 @@
 *soal ini berbobot lebih daripada soal sebelah*
 
 NAMA: DITA PRIHATINI
-
 NRP: 06111840000080
 
 
