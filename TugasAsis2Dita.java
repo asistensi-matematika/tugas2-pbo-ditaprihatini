@@ -43,14 +43,14 @@ public class TugasAsis2Dita {
                 r2 = riil;
                 i2 = imajiner;
             hasil(i1,i2,r1,r2);
-            } 
-        }
+        } 
+    }
     
     //Sebuah Method untuk mengubah String ke int
     public static int Huruf(String huruff){
         int akhir = Integer.parseInt(huruff);
         return akhir;
-        }
+    }
     
     //Sebuah Method untuk saat kondisi riil = 0
     public static void Angka(String Baru, int r1, int r2, int i1, int i2){
@@ -62,7 +62,7 @@ public class TugasAsis2Dita {
         }
             String im = Baru.substring(i1,i2);
             imajiner = Huruf(im);
-        }
+    }
     
     //Sebuah Method untuk mencetak hasil dari perhitungan bilangan kompleks
     public static void hasil (int i1, int i2, int r1, int r2 ){
@@ -70,5 +70,5 @@ public class TugasAsis2Dita {
             JawabanRiil     = (r1*r2)-(i1*i2);
             JawabanImajiner = (r1*i2)+(r2*i1);
         System.out.println("Hasilnya adalah "+JawabanRiil+ "+"+JawabanImajiner+"i");
-            }
-        }
+    }
+}
