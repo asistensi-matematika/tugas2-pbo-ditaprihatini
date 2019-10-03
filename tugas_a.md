@@ -48,10 +48,10 @@ output: -27i3
 ```
 
 ## screenshot hasil
-SOAL NO 1
+Tampilan untuk soal no 1
 ![soal1](https://user-images.githubusercontent.com/49512967/66121551-ae016f80-e607-11e9-85bc-34ef6c100b15.jpg)
 
-SOAL NO 2
+Tampilan untuk soal no 2
 ![soal2](https://user-images.githubusercontent.com/49512967/66121554-ae9a0600-e607-11e9-9c54-30924e6d3e5e.jpg)
 `
 
