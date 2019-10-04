@@ -49,10 +49,12 @@ output: -27i3
 
 ## screenshot hasil
 Tampilan untuk soal no 1
+
 ![1fix](https://user-images.githubusercontent.com/49512967/66181620-b1463b00-e69b-11e9-846a-07c2e7fb8284.jpg)
 
 
 Tampilan untuk soal no 2
+
 ![2fix](https://user-images.githubusercontent.com/49512967/66181623-b1ded180-e69b-11e9-98f0-24663fdf1a01.jpg)
 
 
