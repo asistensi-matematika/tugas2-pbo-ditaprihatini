@@ -12,64 +12,56 @@ import java.util.Scanner;
  * @author DitaP
  */
 public class BilanganKompleks {
-
-    static int riil, imajiner;
-    
     public static void main(String[] args) {
+        System.out.println("Input :");
         Scanner dita = new Scanner(System.in);
-        String a = dita.nextLine();
-        String b = dita.nextLine();
-        char[]arraya = a.toCharArray();
-        char[]arrayb = b.toCharArray();
-        int aa = arraya.length;
-        int bb = arrayb.length;
-        if(aa == 4 && bb == 4){
-            Angka(a,0,1,1,3);
-            int r1, i1;
-                r1 = riil;
-                i1 = imajiner;
-            Angka(b,0,1,1,3);
-            int r2, i2;
-                r2 = riil;
-                i2 = imajiner;
-            hasil(i1,i2,r1,r2);
-        }else if (aa == 2 && bb == 4){
-            Angka(a,0,0,0,1);
-            int r1, i1;
-                r1 = 0;
-                i1 = imajiner;
-            Angka(b,0,1,1,3);
-            int r2,i2;
-                r2 = riil;
-                i2 = imajiner;
-                hasil(i1,i2,r1,r2);
-        }
-    }
+        String bil1 = dita.nextLine();
+        String bil2 = dita.nextLine();
+        System.out.println("Output :");
+        String real1, real2, im1, im2;
         
-    //Sebuah Method untuk mengubah String ke int
-    public static int Huruf(String huruff){
-        int akhir = Integer.parseInt(huruff);
-        return akhir;
-    }
-    
-    //Sebuah Method untuk saat kondisi riil = 0
-    public static void Angka(String Baru, int r1, int r2, int i1, int i2){
-        if(r1 == 0 && r2 == 0){
-            riil = Huruf("0");
-        }else{
-            String ril = Baru.substring(r1,r2);
-            riil = Huruf(ril);
+        if (bil1.length()==4){
+            String[] bagian1 = bil1.split("\\+");
+            String[] bagian2 = bil2.split("\\+");
+            
+            //bilangan real dan imajiner pertama
+            real1 =  bagian1[0];
+            String imajiner1 = bagian1[1];
+            im1 = bagian1[1].substring(0,1);
+            
+            //bilangan real dan imajiner kedua
+            real2 = bagian2[0];
+            String imajiner2 = bagian2[1];
+            im2 = bagian2[1].substring(0,1);
+            
+            //Mengubah tipe data dari String menjadi int
+            int r1 = Integer.parseInt(real1);
+            int r2 = Integer.parseInt(real2);
+            int i1 = Integer.parseInt(im1);
+            int i2 = Integer.parseInt(im2);
+            hasil(r1,r2,i1,i2);
         }
-            String im = Baru.substring(i1,i2);
-            imajiner = Huruf(im);
+        else if(bil1.length()==2){
+            String[] bagian2 = bil2.split("\\-");
+            //saat bilangan real yang pertama = 0
+            real1 = "0";
+            im1 = bil1.substring(0,1);
+            real2 = bagian2[0];
+            String imajiner2 = bagian2[1];
+            im2 = bagian2[1].substring(0,1);
+            
+            //Mengubah tipe data dari String menjadi int
+            int r1 = Integer.parseInt(real1);
+            int r2 = Integer.parseInt(real2);
+            int i1 = Integer.parseInt(im1);
+            int i2 = Integer.parseInt(im2);
+            hasil(r1,r2,i1,(i2*(-1)));
+        }
     }
     
-    //Sebuah Method untuk mencetak hasil dari perhitungan bilangan kompleks
-    public static void hasil(int i1, int i2, int r1, int r2){
-        int JawabanRiil, JawabanImajiner;
-            JawabanRiil     = (r1*r2)-(i1*i2);
-            JawabanImajiner = (r1*i2)+(r2*i1);
-        System.out.println("Hasilnya adalah "+JawabanRiil+" + "+JawabanImajiner+
-                "i");
+    //Sebuah method untuk mendapatkan hasil perhitungan bilangan kompleks
+    public static void hasil(int r1, int r2, int i1, int i2){
+    System.out.println(((r1*r2)-(i1*i2))+" + "
+            +((r1*i2)+(r2*i1))+"i");
     }
 }
